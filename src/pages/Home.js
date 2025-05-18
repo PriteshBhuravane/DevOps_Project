@@ -1,22 +1,22 @@
 import React from 'react';
-import { Container, Card, Button } from 'react-bootstrap';
+import { Container,Row,Col } from 'react-bootstrap';
+import Card1 from '../components/Card1';
 
 function Home() {
   return (
-    <Container className="mt-5">
-      <Card>
-        <Card.Header>
-          <h1>DevOps Mini Project</h1>
-        </Card.Header>
-        <Card.Body>
-          <Card.Title>CI/CD Pipeline Demo</Card.Title>
-          <Card.Text>
-            This is a simple React + Bootstrap application for demonstrating a CI/CD pipeline using GitHub, Jenkins, and Docker.
-          </Card.Text>
-          <Button variant="primary">Click Me</Button>
-        </Card.Body>
-      </Card>
+    <Container className="mt-5" >
+        <div className=' text-center mb-4'>
+        <h1>Welcome to the DevOps Mini Project</h1>
+        <p>This project demonstrates a complete CI/CD pipeline for DevOps using React, Jenkins, and Docker.</p>
+      </div>
+      <Row>
+        <Col md={3}><Card1 /></Col>
+        <Col md={3}><Card1 /></Col>
+        <Col md={3}><Card1 /></Col>
+        <Col md={3}><Card1 /></Col>
+      </Row>
     </Container>
+    
   );
 }
 
